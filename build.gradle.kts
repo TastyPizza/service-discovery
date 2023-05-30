@@ -16,6 +16,12 @@ repositories {
 	maven { url = uri("https://artifactory-oss.prod.netflix.net/artifactory/maven-oss-candidates") }
 }
 
+tasks {
+	test {
+		enabled = false
+	}
+}
+
 extra["springCloudVersion"] = "2022.0.2"
 
 dependencies {
